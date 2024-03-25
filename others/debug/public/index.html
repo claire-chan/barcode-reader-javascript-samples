@@ -103,13 +103,13 @@
           ); // Filter out unchecked barcodes.
           await router.addResultFilter(filter);
 
-          let ss = await router.getSimplifiedSettings("ReadSingleBarcode");
+          let ss = await router.getSimplifiedSettings("ReadBarcodes_SpeedFirst");
           ss.timeout = 100000;
           ss.minImageCaptureInterval = 100;
           ss.capturedResultItemTypes =
             Dynamsoft.Core.EnumCapturedResultItemType.CRIT_BARCODE |
             Dynamsoft.Core.EnumCapturedResultItemType.CRIT_ORIGINAL_IMAGE;
-          await router.updateSettings("ReadSingleBarcode", ss);
+          await router.updateSettings("ReadBarcodes_SpeedFirst", ss);
 
           // Define a callback for results.
           const resultReceiver = new Dynamsoft.CVR.CapturedResultReceiver();
@@ -198,7 +198,7 @@
 
           // Open camera and start scanning single barcode.
           await cameraEnhancer.open();
-          await router.startCapturing("ReadSingleBarcode");
+          await router.startCapturing("ReadBarcodes_SpeedFirst");
         });
 
       document
