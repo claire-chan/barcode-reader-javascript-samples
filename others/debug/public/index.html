@@ -104,10 +104,6 @@
           await router.addResultFilter(filter);
 
           const settings = {
-	"GlobalParameter" : 
-	{
-		"MaxTotalImageDimension" : 0
-	},
 	"ImageParameterOptions" : 
 	[
 		{
@@ -207,65 +203,6 @@
 					"Sensitivity" : 5
 				}
 			]
-		}
-	],
-	"TargetROIDefOptions" : 
-	[
-		{
-			"BaseTargetROIDefName" : "",
-			"Location" : 
-			{
-				"Offset" : 
-				{
-					"FirstPoint" : 
-					[
-						0,
-						0,
-						1,
-						1
-					],
-					"FourthPoint" : 
-					[
-						0,
-						100,
-						1,
-						1
-					],
-					"MeasuredByPercentage" : 1,
-					"ReferenceObjectOriginIndex" : 0,
-					"ReferenceObjectType" : "ROT_ATOMIC_OBJECT",
-					"ReferenceXAxis" : 
-					{
-						"AxisType" : "AT_MIDPOINT_EDGE",
-						"EdgeIndex" : 0,
-						"LengthReference" : "LR_X",
-						"RotationAngle" : 90
-					},
-					"ReferenceYAxis" : 
-					{
-						"AxisType" : "AT_MIDPOINT_EDGE",
-						"EdgeIndex" : 1,
-						"LengthReference" : "LR_Y",
-						"RotationAngle" : 90
-					},
-					"SecondPoint" : 
-					[
-						100,
-						0,
-						1,
-						1
-					],
-					"ThirdPoint" : 
-					[
-						100,
-						100,
-						1,
-						1
-					]
-				}
-			},
-			"Name" : "roi_default",
-			"PauseFlag" : 0
 		}
 	]
 };
