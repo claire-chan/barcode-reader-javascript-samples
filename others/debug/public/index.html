@@ -104,14 +104,16 @@
           await router.addResultFilter(filter);
 
           
-          await router.initSettings("https://claire-chan.github.io/barcode-reader-javascript-samples/others/debug/public/template10.json");
-          /*let ss = await router.getSimplifiedSettings("ReadBarcodes_SpeedFirst");
+          // await router.initSettings("https://claire-chan.github.io/barcode-reader-javascript-samples/others/debug/public/template10.json");
+          let ss = await router.getSimplifiedSettings("ReadBarcodes_SpeedFirst");
           ss.timeout = 100000;
           ss.minImageCaptureInterval = 100;
           ss.capturedResultItemTypes =
             Dynamsoft.Core.EnumCapturedResultItemType.CRIT_BARCODE |
             Dynamsoft.Core.EnumCapturedResultItemType.CRIT_ORIGINAL_IMAGE;
-          await router.updateSettings("ReadBarcodes_SpeedFirst", ss);*/
+          ss.barcodeSettings.deblurModes = [128, 2, 1, 4, 64, 0, 0, 0, 0, 0];
+          
+          await router.updateSettings("ReadBarcodes_SpeedFirst", ss);
 
           // Define a callback for results.
           const resultReceiver = new Dynamsoft.CVR.CapturedResultReceiver();
