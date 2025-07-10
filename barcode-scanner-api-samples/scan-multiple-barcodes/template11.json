@@ -16,17 +16,16 @@
                 "BF_DOTCODE"
             ],
             "BarcodeHeightRangeArray": null,
-            "BarcodeTextLengthRangeArray":      [
-        {
-            "MinValue": 10,
-            "MaxValue": 12
-        }
-    ],
-            "BarcodeTextRegExPattern":"",
+            "BarcodeTextLengthRangeArray": [
+                {
+                    "MinValue": 11,
+                    "MaxValue": 13
+                }
+            ],
+            "BarcodeTextRegExPattern": "",
             "BarcodeWidthRangeArray": null,
             "BarcodeZoneBarCountRangeArray": null,
             "BarcodeZoneMinDistanceToImageBorders": 0,
-
             "Code128Subset": "",
             "DataMatrixModuleIsotropic": 1,
             "DataMatrixSizeOptions": [
@@ -69,15 +68,15 @@
             "BarcodeBytesLengthRangeArray": null,
             "BarcodeComplementModes": null,
             "BarcodeFormatIds": [
-                "BF_ALL"
+                "BF_CODE_128"
             ],
             "BarcodeHeightRangeArray": null,
-            "BarcodeTextLengthRangeArray":   [
-        {
-            "MinValue": 10,
-            "MaxValue": 11
-        }
-    ],
+            "BarcodeTextLengthRangeArray": [
+                {
+                    "MinValue": 11,
+                    "MaxValue": 13
+                }
+            ],
             "BarcodeTextRegExPattern": "^S",
             "BarcodeWidthRangeArray": null,
             "BarcodeZoneBarCountRangeArray": null,
@@ -121,21 +120,7 @@
     "BarcodeReaderTaskSettingOptions": [
         {
             "BarcodeFormatIds": [
-                "BF_CODE_11",
-                "BF_CODE_39",
-                "BF_CODE_39_EXTENDED",
-                "BF_CODE_128",
-                "BF_CODE_93",
-                "BF_CODABAR",
-                "BF_ITF",
-                "BF_EAN_13",
-                "BF_EAN_8",
-                "BF_UPC_A",
-                "BF_UPC_E",
-                "BF_INDUSTRIAL_25",
-                "BF_MSI_CODE",
-                "BF_CODE_32",
-                "BF_MATRIX_25"
+                "BF_CODE_128"
             ],
             "BarcodeFormatSpecificationNameArray": [
                 "bfs1",
