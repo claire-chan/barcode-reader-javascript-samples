@@ -78,7 +78,8 @@
         cameraSwitchControl: "toggleFrontBack"
       },
 
-      barcodeFormats: [Dynamsoft.DBR.EnumBarcodeFormat.BF_DATAMATRIX],
+      templateFilePath: "template11.json", // Path to the template file for the scanner UI
+      utilizedTemplateNames: { "single": "ReadBarcodes_Default", "multi_unique": "ReadBarcodes_Default", "image": "ReadBarcodes_Default" }
       
     };
 
