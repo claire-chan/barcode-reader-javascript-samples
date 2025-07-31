@@ -50,6 +50,9 @@
         cvRouter = await Dynamsoft.CVR.CaptureVisionRouter.createInstance();
         cvRouter.setInput(cameraEnhancer);
 
+        // Set barcode scan settings
+        await cvRouter.initSettings("template11.json");
+
         // Define a callback for results.
         cvRouter.addResultReceiver({
           onDecodedBarcodesReceived: (result) => {
@@ -75,7 +78,7 @@
         // Open camera and start scanning barcode.
         await cameraEnhancer.open();
         cameraView.setScanLaserVisible(true);
-        await cvRouter.startCapturing("ReadBarcodes_SpeedFirst");
+        await cvRouter.startCapturing("ReadBarcodes_Default");
       } catch (ex) {
         let errMsg = ex.message || ex;
         console.error(errMsg);
